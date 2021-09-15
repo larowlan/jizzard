@@ -58,7 +58,7 @@ class BulkCreate extends Command {
       $issue->setProjectKey($project)
         ->setSummary($title)
         ->setPriorityName("Medium")
-        ->setIssueType("Story")
+        ->setIssueType("Task")
         ->setDescription($desription);
       $issues[] = $issue;
     }
