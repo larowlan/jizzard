@@ -2,6 +2,7 @@
 <?php
 // application.php
 
+date_default_timezone_set('Australia/Sydney');
 require dirname(__DIR__) . '/vendor/autoload.php';
 
 use Larowlan\Jizzard\Commands\BulkCreate;
