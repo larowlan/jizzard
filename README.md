@@ -1,4 +1,4 @@
-## Jira Wizzard aka Jizzard 👑
+## Jira Wizard aka Jizzard 👑
 
 ### Use cases:
 
