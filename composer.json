@@ -1,0 +1,26 @@
+{
+    "name": "larowlan/jizzard",
+    "description": "Jira bulk ticket creator",
+    "type": "project",
+    "require": {
+        "symfony/console": "^5.3",
+        "guzzlehttp/guzzle": "^7.3",
+        "lesstif/php-jira-rest-client": "^2.5",
+        "symfony/yaml": "^5.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Lee Rowlands",
+            "email": "lee.rowlands@previousnext.com.au"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Larowlan\\Jizzard\\": "src/"
+        }
+    }
+}

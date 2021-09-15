@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+// application.php
+
+require dirname(__DIR__) . '/vendor/autoload.php';
+
+use Larowlan\Jizzard\Commands\BulkCreate;
+use Symfony\Component\Console\Application;
+
+$application = new Application();
+
+$application->add(new BulkCreate());
+
+$application->run();

@@ -1,0 +1,6 @@
+.idea
+.DS_Store
+/vendor/
+.jira.yml
+template.txt
+projects.yml
