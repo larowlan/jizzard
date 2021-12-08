@@ -6,10 +6,16 @@ date_default_timezone_set('Australia/Sydney');
 require dirname(__DIR__) . '/vendor/autoload.php';
 
 use Larowlan\Jizzard\Commands\BulkCreate;
+use Larowlan\Jizzard\Commands\CsvLoad;
+use Larowlan\Jizzard\Commands\IssueDetails;
+use Larowlan\Jizzard\Commands\LinkTypes;
 use Symfony\Component\Console\Application;
 
 $application = new Application();
 
 $application->add(new BulkCreate());
+$application->add(new LinkTypes());
+$application->add(new IssueDetails());
+$application->add(new CsvLoad());
 
 $application->run();
