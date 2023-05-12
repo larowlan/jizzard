@@ -10,6 +10,7 @@ use Larowlan\Jizzard\Commands\BulkCreateFromTemplate;
 use Larowlan\Jizzard\Commands\CsvLoad;
 use Larowlan\Jizzard\Commands\IssueDetails;
 use Larowlan\Jizzard\Commands\LinkTypes;
+use Larowlan\Jizzard\Commands\Projects;
 use Symfony\Component\Console\Application;
 
 $application = new Application();
@@ -19,5 +20,6 @@ $application->add(new LinkTypes());
 $application->add(new IssueDetails());
 $application->add(new CsvLoad());
 $application->add(new BulkCreateFromTemplate());
+$application->add(new Projects());
 
 $application->run();
